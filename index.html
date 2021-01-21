@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds: A Picture Gallery</title>
+    
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container{
+      display: grid;
+      height: 100vh;
+     
+      grid-template-rows: 200px 75px auto 50px;
+    }
+
+    .header{
+     background-color: darkgreen;
+     
+     background-image: url(https://images.pexels.com/photos/35064/kingfisher-bird-aviary-color-nature.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+     background-size: cover;
+     
+     /*backgound-position: center;*/
+     background-position: 50% 40%;
+     /*50% horizontally in center and 40% vertically in center*/
+     /*these values can be changed based on the image*/
+   }
+   
+   .header h1{
+     padding-top: 50px;
+     padding-left: 50px;
+   }
+   
+    .bird-quote{
+     background-color: cyan;
+     text-align: center;
+   }
+   
+   .gallery{
+     display: flex;
+     justify-content: center;
+   }
+   
+   .gallery-item {
+        margin: 10px;
+    }
+   
+   .gallery-item img{
+     width: 300px;
+     height: 250px;
+   }
+   
+    .footer{
+     background-color: darkblue;
+     
+     color: white;
+     text-align: center;
+   }
+   
+   
+</style>
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="header">
+          <h1>Birds: A Picture Gallery</h1>
+        </div>
+        
+        <div class="bird-quote">
+          <h3>In order to see birds it is necessary to become part of the silence. - Robert Lynd</h3>
+        </div>
+
+        <div class="gallery">
+          
+           <div class="gallery-item">
+              <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001" alt="">
+          </div>
+          <div class="gallery-item">
+              <img src="https://post.greatist.com/wp-content/uploads/sites/3/2020/01/327269_2200-1200x628.jpg" alt="">
+          </div>
+          <div class="gallery-item">
+              <img src="https://ychef.files.bbci.co.uk/624x351/p02knl9s.jpg" alt="">
+          </div>
+          <div class="gallery-item">
+              <img src="https://see.news/wp-content/uploads/2020/12/UK_wildbirds-01-robin.jpg" alt="">
+          </div>
+          
+        </div>
+    
+        <div class="footer">
+          <h4>Designed by Student Name</h4>
+        </div>
+    
+    </div>
+</body>
+</html>
